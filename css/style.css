@@ -1,10 +1,4 @@
 @charset "utf-8";
-/*
-	Visual by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
-
 
 /*-----------------------------------------------------------------------------
 
@@ -232,173 +226,6 @@ p {
 	margin-top: -40px;
 	-webkit-animation: rotatee 2.0s infinite linear;
 	animation: rotatee 2.0s infinite linear;
-}
-
-.cube {
-  background-color: #4CAF50;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  -webkit-animation: cubemove 4s infinite ease-in-out;
-  -moz-animation: cubemove 4s infinite ease-in-out;
-  -o-animation: cubemove 4s infinite ease-in-out;
-  animation: cubemove 4s infinite;
-}
-
-@-webkit-keyframes cubemove {
-  35% {
-    -webkit-transform: scale(0.005);
-  }
-
-  50% {
-    -webkit-transform: scale(1.7);
-  }
-
-  65% {
-    -webkit-transform: scale(0.005);
-  }
-}
-
-
-@-moz-keyframes cubemove {
-  35% {
-    -moz-transform: scale(0.005);
-  }
-
-  50% {
-    -moz-transform: scale(1.7);
-  }
-
-  65% {
-    -moz-transform: scale(0.005);
-  }
-}
-
-@-moz-keyframes cubemove {
-  35% {
-    -moz-transform: scale(0.005);
-  }
-
-  50% {
-    -moz-transform: scale(1.7);
-  }
-
-  65% {
-    -moz-transform: scale(0.005);
-  }
-}
-
-.cube1 {
-  left: 14px;
-  top: 0px;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.1s;
-}
-
-.cube2 {
-  left: 28px;
-  top: 0px;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.2s;
-}
-
-.cube3 {
-  left: 42px;
-  top: 0px;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.3s;
-}
-
-.cube4 {
-  left: 0px;
-  top: 14px;
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.1s;
-}
-
-.cube5 {
-  left: 14px;
-  top: 14px;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.2s;
-}
-
-.cube6 {
-  left: 28px;
-  top: 14px;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.3s;
-}
-
-.cube7 {
-  left: 42px;
-  top: 14px;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.4s;
-}
-
-.cube8 {
-  left: 0px;
-  top: 28px;
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.2s;
-}
-
-.cube9 {
-  left: 14px;
-  top: 28px;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.3s;
-}
-
-.cube10 {
-  left: 28px;
-  top: 28px;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.4s;
-}
-
-.cube11 {
-  left: 42px;
-  top: 28px;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.5s;
-}
-
-.cube12 {
-  left: 0px;
-  top: 42px;
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.3s;
-}
-
-.cube13 {
-  left: 14px;
-  top: 42px;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.4s;
-}
-
-.cube14 {
-  left: 28px;
-  top: 42px;
-  -webkit-animation-delay: 1s;
-  animation-delay: 0.5s;
-}
-
-.cube15 {
-  left: 42px;
-  top: 42px;
-  -webkit-animation-delay: 1.2s;
-  animation-delay: 0.6s;
-}
-.spinner {
-  width: 100px;
-  height: 100px;
-  position: relative;
-	top: 50%;
-	left: 50%;
-	margin: -20px 0 0 -20px;
 }
 
 /*----- Typography -----*/
@@ -848,7 +675,7 @@ nav {
 }
 .navbar-default .navbar-right {
 	font-family: 'Exo', sans-serif;
-	font-size: 12px;
+	font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
 	height: 100%;
@@ -1077,7 +904,7 @@ nav {
 .navbar-default .navbar-brand .logo-big {
 	position:absolute;
     opacity: 1;
-    width: 180px;
+    width: 280px;
     margin-top: 11px; 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -1087,7 +914,7 @@ nav {
 }
 .navbar-default .navbar-brand .logo-small {
 	position:absolute;
-    width: 180px;
+    width: 280px;
     margin-top: 11px;
     opacity: 0;
     -webkit-transition: all 0.4s ease;
@@ -1107,7 +934,7 @@ nav {
 .navbar-small .navbar-brand .logo-big {
     position:absolute;
     opacity: 0;
-    width: 170px;
+    width: 200px;
     margin-top: 3px;  
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -1118,7 +945,7 @@ nav {
 .navbar-small .navbar-brand .logo-small {
     position:absolute;
     opacity: 1;
-    width: 170px;
+    width: 200px;
     margin-top: 3px; 
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
