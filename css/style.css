@@ -3673,3 +3673,6 @@ pre {
 	margin: -22px auto 0 auto;
 }
 
+.intro {
+    font-size: 20px !important;
+}
