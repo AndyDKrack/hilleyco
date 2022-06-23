@@ -3676,3 +3676,8 @@ pre {
 .intro {
     font-size: 20px !important;
 }
+
+.com {
+    font-size: 20px;
+    line-height: 2;
+}
