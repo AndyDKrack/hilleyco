@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="startTime()" >
 
 <!-- Start Preloader -->
 
@@ -57,7 +57,7 @@
             <ul class="nav navbar-nav  navbar-right">
                <li>
                   <a class="to-top">
-                     time
+                     <div id="time" style="color: rgb(30, 197, 30);" ></div> 
                   </a>
                </li>
                <li>
@@ -1291,6 +1291,24 @@
 <script type="text/javascript" src="js/scripts.js"></script>
 <script  src="js/loader.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<script>
+   function startTime() {
+     const today = new Date();
+     let h = today.getHours();
+     let m = today.getMinutes();
+     let s = today.getSeconds();
+     m = checkTime(m);
+     s = checkTime(s);
+     document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
+     setTimeout(startTime, 1000);
+   }
+   
+   function checkTime(i) {
+     if (i < 10) {i = "0" + i};  
+     return i;
+   }
+   </script>
 
 </body>
 </html>

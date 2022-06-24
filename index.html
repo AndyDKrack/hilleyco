@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="startTime()" >
 
 <!-- Start Preloader -->
 
@@ -57,7 +57,7 @@
             <ul class="nav navbar-nav  navbar-right">
                <li>
                   <a class="to-top">
-                     time
+                     <div id="time" style="color: rgb(30, 197, 30);"></div> 
                   </a>
                </li>
                <li>
@@ -242,7 +242,7 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6 text-left about-text">
-               <h3 id="hva" class="wow fadeInUp">Heating, Ventilation & Air Conditioning </h3>
+               <h3 id="hva" class="wow fadeInUp">Heating, Ventilation & Air Conditioning (HVAC) </h3>
                <p class="wow fadeInUp intro">We install equipment from all major big brands in the country. We use high quality insulated panels to create temperature controlled hygienic environments throughout Kenya, from cold ooms & hygienic food processing environments, through to chilled distribution warehouses & walk-in freezers, Manufacturing sites, Hotels & Resturants, Night Clubs & Pubs, Airports & Rail Stations, Hospitals and Supermarkets.</p>
                <p class="wow fadeInUp">
                   <button type="button" class="btn btn-primary btn-md">More</button>
@@ -250,7 +250,7 @@
             </div>
             <div class="col-md-6 wow fadeInUp about-text">
 
-
+               <img class="hm-image" src="img/portfolio/hm2.jpg">
 
             </div>
          </div>
@@ -262,7 +262,7 @@
          <div class="row">
             <div class="col-md-6 wow fadeInUp about-text">
 
-               
+               <img class="hm-image" src="img/portfolio/hm1.jpg">
 
             </div>
             <div class="col-md-6 text-left about-text">
@@ -284,12 +284,12 @@
                <h3 id="pke" class="wow fadeInUp">Plumbing & Kitchen Equipment </h3>
                <p class="wow fadeInUp intro">We do plumbing works & consistent maintenance of kitchen hood exhaust systems in resturants or facilities. Removing and cleaning grease & flamable residue from the interior hood surface, filters, ductworks & exhaust fans. <br> We also supply kitchen equipment and do repairs for resturants, hotels, motels and learning institutions. </p>
                <p class="wow fadeInUp">
-                  <button type="button" class="btn btn-primary btn-md">Get in Touch</button>
+                  <button type="button" class="btn btn-primary btn-md">More</button>
                </p>
             </div>
             <div class="col-md-6 wow fadeInUp about-text">
 
-               
+               <img class="hm-image" src="img/portfolio/hm3.jpg">
 
             </div>
          </div>
@@ -455,25 +455,10 @@
       <div class="separator"></div>
       <div class="container-fluid">
          <div class="col-md-12 text-center">
-            <h3 class="section-title wow fadeInUp">Services & Projects.</h3>
+            <h3 class="section-title wow fadeInUp">Our Services</h3>
             <p class="subheading wow fadeInUp">   <span class="highlight">  </span>  </p>
          </div>
          <div id="filters-container-fullwidth" class="cbp-l-filters-alignCenter wow fadeInUp">
-            <div class="">
-               <div class=""></div>
-            </div>
-            <div class="">
-               <div class=""></div>
-            </div>
-            <div class="">
-               <div class=""></div>
-            </div>
-            <div class="">
-               <div class=""></div>
-            </div>
-            <div class="">
-               <div class=""></div>
-            </div>
             <div  class="cbp-filter-item"> 
                <div class=""></div>
             </div>
@@ -498,8 +483,8 @@
                                  <i class="icon-link"></i>
                               </a>
                            </li>
-                           <li class="cbp-l-caption-title">Future Trend</li>
-                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                           <li class="cbp-l-caption-title">Building, Construction & Renovation works</li>
+                           <li class="cbp-l-caption-desc"></li>
                         </ul>
                      </div>
                   </div>
@@ -519,8 +504,8 @@
                                  <i class="icon-link"></i>
                               </a>
                            </li>
-                           <li class="cbp-l-caption-title">Pro Bicycle</li>
-                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                           <li class="cbp-l-caption-title">Plumbing & Kitchen Equipment</li>
+                           <li class="cbp-l-caption-desc"></li>
                         </ul>
                      </div>
                   </div>
@@ -540,8 +525,8 @@
                                  <i class="icon-link"></i>
                               </a>
                            </li>
-                           <li class="cbp-l-caption-title">Door Cover</li>
-                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                           <li class="cbp-l-caption-title">Heating, Ventilation & Air Conditioning (HVAC)</li>
+                           <li class="cbp-l-caption-desc"></li>
                         </ul>
                      </div>
                   </div>
@@ -561,8 +546,8 @@
                                  <i class="icon-link"></i>
                               </a>
                            </li>
-                           <li class="cbp-l-caption-title">Pro Close-up</li>
-                           <li class="cbp-l-caption-desc">by Visual Design</li>
+                           <li class="cbp-l-caption-title">Consultation</li>
+                           <li class="cbp-l-caption-desc"></li>
                         </ul>
                      </div>
                   </div>
@@ -851,8 +836,26 @@
 <script type="text/javascript" src="js/plugins/wow.min.js"></script>
 <script type="text/javascript" src="js/plugins/counterup.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
-<script  src="js/loader.js"></script>
+<script type="text/javascript" src="js/loader.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<script>
+   function startTime() {
+     const today = new Date();
+     let h = today.getHours();
+     let m = today.getMinutes();
+     let s = today.getSeconds();
+     m = checkTime(m);
+     s = checkTime(s);
+     document.getElementById('time').innerHTML =  h + ":" + m + ":" + s;
+     setTimeout(startTime, 1000);
+   }
+   
+   function checkTime(i) {
+     if (i < 10) {i = "0" + i};  
+     return i;
+   }
+   </script>
 
 </body>
 </html>

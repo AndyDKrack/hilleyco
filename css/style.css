@@ -3681,3 +3681,8 @@ pre {
     font-size: 20px;
     line-height: 2;
 }
+
+.hm-image {
+    max-width: 600px;
+    height: auto;
+}
