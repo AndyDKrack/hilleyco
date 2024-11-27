@@ -1,3 +1,3 @@
 # hilley-consultants-limited
 
-# Designed & Developed by Derrick Andera DBPB TEch
+# Designed & Developed by Derrick - Arkraft Technica Limited
